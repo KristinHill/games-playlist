@@ -1,0 +1,19 @@
+{
+  "name": "game_list_app",
+  "version": "1.0.0",
+  "description": "Self-hosted video game tracking website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "author": "Krill",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.8.0",
+    "sequelize": "^6.23.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
