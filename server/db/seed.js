@@ -37,7 +37,7 @@ const runSeed = async() => {
         distributor: "Nintendo"
     });
     const wiiConsole = await Console.create({
-        name: "wii",
+        name: "Wii",
         distributor: "Nintendo"
     });
     const pcConsole = await Console.create({
@@ -76,7 +76,7 @@ const runSeed = async() => {
         link: "blah.com",
         year: 2020,
         played: true,
-        artworkUrl: "acnh-image"
+        artworkUrl: "acnh.png"
     });
     await acnh.setGenres([rpgGenre, sandboxGenre, relaxGenre]);
     await acnh.setStudios([ninStudio]);

@@ -82,15 +82,7 @@ const Console = dbConnection.define('console', {
     }
 });
 
-//     Game.hasmany(Genre)
-//     Genre.hasmany(Game)
-    
-//     Game.hasmany(Studio)
-//     Studio.hasmany(Game)
-
-//     Game.hasmany(Console)
-//     Console.hasmany(Game)
-
+//Joins
 Game.belongsToMany(Genre, { through: 'games_genres' });
 Genre.belongsToMany(Game, { through: 'games_genres' });
 
