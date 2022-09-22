@@ -17,15 +17,6 @@ const dbConnection = new Sequelize(
         - name (not null)
     Console model
         - name (not null)
-
-    Game.hasmany(Genre)
-    Genre.hasmany(Game)
-    
-    Game.hasmany(Studio)
-    Studio.hasmany(Game)
-
-    Game.hasmany(Console)
-    Console.hasmany(Game)
 */
 
 const Game = dbConnection.define('game', {
@@ -60,21 +51,21 @@ const Game = dbConnection.define('game', {
 
 const Genre = dbConnection.define('genre', {
     name: {
-        type: Sequelize.DataTypes.STRING(255),
+        type: Sequelize.DataTypes.STRING(50),
         allowNull: false
     }
 });
 
 const Studio = dbConnection.define('studio', {
     name: {
-        type: Sequelize.DataTypes.STRING(255),
+        type: Sequelize.DataTypes.STRING(100),
         allowNull: false
     }
 });
 
 const Console = dbConnection.define('console', {
     name: {
-        type: Sequelize.DataTypes.STRING(255),
+        type: Sequelize.DataTypes.STRING(50),
         allowNull: false
     },
     distributor: {

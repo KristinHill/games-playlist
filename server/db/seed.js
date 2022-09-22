@@ -69,6 +69,7 @@ const runSeed = async() => {
     const ninStudio = await Studio.create({ name: "Nintendo" });
     const treyStudio = await Studio.create({ name: "Treyarch" });
     const hitStudio = await Studio.create({ name: "Hit-Point" });
+    const epicStudio = await Studio.create({ name: "Epic" });
 
     //Games
     const acnh = await Game.create({
