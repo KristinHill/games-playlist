@@ -36,11 +36,11 @@ const Game = dbConnection.define('game', {
     },
     year: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     played: {
         type: Sequelize.DataTypes.BOOLEAN,
-        allowNull: false,
+        allowNull: true,
         defaultValue: false
     },
     artworkUrl: {
