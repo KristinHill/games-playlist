@@ -94,6 +94,16 @@ const runSeed = async() => {
     await codBO3.setStudios([sonyStudio, treyStudio]);
     await codBO3.setConsoles([ps4Console, ps5Console]);
 
+    const portal2 = await Game.create({
+        title: "Portal 2",
+        link: "portal.com",
+        year: 2015,
+        played: false,
+        artworkUrl: "portal2-image"
+    });
+    await portal2.setGenres([rpgGenre, puzzleGenre]);
+    await portal2.setConsoles([ps4Console, ps5Console, switchConsole]);
+
 
     console.log("Database is seeded!");
     process.kill(0);

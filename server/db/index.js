@@ -84,9 +84,9 @@ Game.belongsToMany(Console, { through: 'games_consoles' });
 Console.belongsToMany(Game, { through: 'games_consoles' });
 
 module.exports = {
-    dbConnection: dbConnection,
-    Game: Game,
-    Genre: Genre,
-    Studio: Studio,
-    Console: Console
+    dbConnection,
+    Game,
+    Genre,
+    Studio,
+    Console
 }
